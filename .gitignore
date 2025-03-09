@@ -19,6 +19,6 @@ vendor/
 .idea
 setup_test.sh
 Makefile
-deploy
+deploy/
 test
 tmp
