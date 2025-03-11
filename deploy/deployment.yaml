@@ -66,15 +66,14 @@ apiVersion: bitnami.com/v1alpha1
 kind: SealedSecret
 metadata:
   name: tasky-secrets
-  namespace: default
+  namespace: tasky
 spec:
   encryptedData:
-    mongodb-uri: AgB/HZHc1GLnLiJ0DcfFZ+YC6fWZd3180n2H4rYCumfTeBqEK+TRGB8+C3ve/305/SPX+Y354dTpMG7CL+DaB3ecks5lm6GJfKrFOkWpzbcO0hMB6ply3WUwhTyrEIGZe4W0gB+DhK74NC2O/urQJDFBKtp9WlDovVLPuIemtqn1c5PmJITlIdU19DdolQRrpax7Py3foEI6VmMOAhN0NCZpn+G/SNEDoTHDy8GwqD9WzU5KxP7HIFzfbTlOmppPAAoibfjITie1mIESItq3Iiuml8VvxWQ3Xig37YFP74glF9ldmendt4dFeFA6KSuY94rDeZ4iiep06/DIL5H2LCQC5RcaSTEH1WNJf15GptQ4fdPKjS2j6o/bGBvTs92pa7tZn/2QW3b5EFKLR2e9E5B8V+BkcCbI6kXN80O/CL0NRvDK3RkRDGrqchwQ0iYy6WANzJFLXrBkZRKbt/llwydt6nbLw8RLVC7yVf4eo6zE/G+E+BQ5zUBmJosQEH7gRkXahF5F+J/DDK8Rmb0T2U25zoMwliO8X1i0Qycy1x4UkH1s6Zm8U6A9BLhq+eUP0oETpT/g5oybEf56IgjDRaZPCo4RnrX8K21s3jZHjp1LAsnMZkEhLHo/2Sli4Z8HbEseOwXr+ln663xUTtYklNIEsWquL8Izs4qhnzGWaANR5Lwhj8ACh87u+QI333vy5u1BSKVPwT6Uutip2KbXo3GvbkR16Fdl8+nMZ+eQJrE9G2X89+n+v7jT
+    mongodb_uri: AgAG1bKUKz1CrDaMwSK6dF1Uzzztj3V1zAa98MUemVMtwdh8FIMCny6nUAVv57PPIZ25fcVIPoUjdyVqY2iiiuqwAFo3kYL4uL/EJqRUQvJcm4Tuf1KT3DbP47z9MAd3RCfVmhYjlv9aeiQNn9Nayb0XzsVyfKBxRNb8oxCnEAcJUEYR+YlTT3OLH8s1Wmu+sH8bd37Rg3lzBKkPxKfySjL8Aj3pCPKGQInlHz6mvm8RoCWqPze+ZpIJrzxEoy9CfV1qmdwIDG0lYh9YDLHZGIYrhfyW9mf3z+xX2Q0qYr4vLGDItKdcH/bYOaLeJMQGtLaEv2L+rvTTFzOkglUYa/8jN7wGxpW6hbxx49vaAnF+0HFdcnqi/4BFOHbc5d66MFIMd28Sn/wARpFeCogGNxblsu+JUL8zbBy6OrsdyeJwj2KyXoNcBRqpGjphElCiSBhm/GWR63iNuR+fMWto6Gr/MI18c8DSo8foVNliQiDJ2N5rKiNGcjr9s+loKY1cllY2WTyABnsbHCCM5DjDL48jz9Z2Do2HTSavTiyhYe3mjvZ+3ZteAw2DZzyO6y6928Fsn08cojITqnIOSPw5MwRYxWATfa/ymKLeaHBt070fy8ml3zUmkGBs6E1rzzzh+Um/kdidGX/zwcpK0C3xL3GqBi26UFXLxGHQFkHslYwKKYPjA0ugMXCbB1eOVAuv+Iv/6acXIsGQWInOzvx68DzmuCMDXvejF17ld+sWwFa8tTGVqv3rnNa31eCZGFb2Ic8wnHuRaKSPSQ==
   template:
     metadata:
-      creationTimestamp: null
       name: tasky-secrets
-      namespace: default
+      namespace: tasky
     type: Opaque
 ---
 apiVersion: rbac.authorization.k8s.io/v1
