@@ -24,6 +24,10 @@ jobs:
 
       - name: Check install
         run: kyverno version
+      
+      - name: Test new resources against existing policies
+        run: kyverno apply policies/ -r deploy/
+        continue-on-error: true
 
       - name: Test pre-defined cases
         run: kyverno test tests/
