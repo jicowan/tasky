@@ -3,6 +3,7 @@ kind: ClusterPolicy
 metadata:
   name: disallow-latest-tag
 spec:
+  validationFailureAction: Audit 
   rules:
   - name: require-image-tag
     match:
@@ -11,7 +12,6 @@ spec:
           kinds:
           - Pod
     validate:
-      failureAction: Audit
       message: "An image tag is required."  
       pattern:
         spec:
@@ -24,7 +24,6 @@ spec:
           kinds:
           - Pod
     validate:
-      failureAction: Audit
       message: "Using a mutable image tag e.g. 'latest' is not allowed."
       pattern:
         spec:
