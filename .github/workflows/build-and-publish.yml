@@ -51,7 +51,7 @@ jobs:
         # if: ${{ github.event_name == 'pull_request' }}
         uses: docker/scout-action@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           command: cves
           image: jicowan/tasky:latest
           only-severities: critical,high
