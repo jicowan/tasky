@@ -24,7 +24,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: tasky-secrets
-              key: mongodb-uri
+              key: MONGODB_URI
         imagePullPolicy: Always
       serviceAccountName: tasky-sa
 ---
