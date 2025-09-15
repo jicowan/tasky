@@ -1,5 +1,5 @@
 # Building the binary of the App
-FROM golang:1.19 AS build
+FROM golang:1.21 AS build
 ENV GOPROXY=direct
 WORKDIR /go/src/tasky
 COPY . .
