@@ -94,7 +94,7 @@ jobs:
       - name: Scan image with Trivy
         # id: docker-scout
         # if: ${{ github.event_name == 'pull_request' }}
-        # uses: docker/scout-action@v1
+        # uses: docker/scout-action@v0.33.0
         uses: aquasecurity/trivy-action@v1
         with:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
