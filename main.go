@@ -25,7 +25,7 @@ func main() {
 		BrowserXssFilter:      true,
 		ContentTypeNosniff:    true,
 		SSLRedirect:           false,
-		SSLHost:               "localhost:8080",
+		// SSLHost:               "localhost:8080",
 		STSSeconds:            31536000,
 		STSIncludeSubdomains:  true,
 		FrameDeny:             true,
