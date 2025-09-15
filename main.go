@@ -24,7 +24,7 @@ func main() {
 		ContentSecurityPolicy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;",
 		BrowserXssFilter:      true,
 		ContentTypeNosniff:    true,
-		SSLRedirect:           true,
+		SSLRedirect:           false,
 		SSLHost:               "localhost:8080",
 		STSSeconds:            31536000,
 		STSIncludeSubdomains:  true,
