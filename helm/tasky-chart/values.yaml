@@ -58,7 +58,7 @@ ingress:
     alb.ingress.kubernetes.io/target-type: "ip"
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
     alb.ingress.kubernetes.io/group.name: "tasky"
-    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-west-2:314146332292:certificate/a9aa817e-f211-4199-b4d6-6fb5e4e39c580d-f726-450c-9494-ea8c447d379f"
+    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-west-2:314146332292:certificate/a9aa817e-f211-4199-b4d6-6fb5e4e39c58"
   hosts:
     - host: tasky.jicomusic.com
       paths:
