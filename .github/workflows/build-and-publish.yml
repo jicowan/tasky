@@ -91,14 +91,16 @@ jobs:
 #          push: true
 #          tags: jicowan/tasky:latest
 
-      - name: Docker Scout
-        id: docker-scout
+      - name: Scan image with Trivy
+        # id: docker-scout
         # if: ${{ github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1
+        # uses: docker/scout-action@v1
+        uses: aquasecurity/trivy-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          command: cves
+          # github-token: ${{ secrets.GITHUB_TOKEN }}
+          # command: cves
 #          image: jicowan/tasky:latest
           image: ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
-          only-severities: critical,high
-          exit-code: true
+          only-severities: CRITICAL,HIGH
+          format: table
+          exit-code: 1
