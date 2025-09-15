@@ -100,7 +100,8 @@ jobs:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
           # command: cves
 #          image: jicowan/tasky:latest
-          image: ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
+          # image: ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
+          image-ref: ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
           only-severities: CRITICAL,HIGH
           vuln-type: os,library
           format: table
