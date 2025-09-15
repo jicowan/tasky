@@ -100,21 +100,21 @@ tolerations: []
 affinity: {}
 
 # Probes configuration
-# probes:
-#   liveness:
-#     enabled: false
-#     httpGet:
-#       path: /health
-#       port: http
-#     initialDelaySeconds: 30
-#     periodSeconds: 10
-#   readiness:
-#     enabled: false
-#     httpGet:
-#       path: /ready
-#       port: http
-#     initialDelaySeconds: 5
-#     periodSeconds: 5
+probes:
+  liveness:
+    enabled: false
+    httpGet:
+      path: /health
+      port: http
+    initialDelaySeconds: 30
+    periodSeconds: 10
+  readiness:
+    enabled: false
+    httpGet:
+      path: /ready
+      port: http
+    initialDelaySeconds: 5
+    periodSeconds: 5
 
 # Environment variables
 env:
