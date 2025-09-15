@@ -2,7 +2,7 @@ module github.com/jeffthorne/tasky
 
 go 1.21
 
-toolchain go1.23.6
+// toolchain go1.23.6
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
