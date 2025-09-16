@@ -101,7 +101,7 @@ jobs:
           # command: cves
           # image: jicowan/tasky:latest
           # image: ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
-          image-ref: ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
-          severity: CRITICAL,HIGH
-          vuln-type: os,library
-          format: table
+          image-ref: '${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}'
+          severity: 'CRITICAL,HIGH'
+          vuln-type: 'os,library'
+          format: 'table'
