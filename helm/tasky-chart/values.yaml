@@ -5,6 +5,11 @@
 # Application configuration
 replicaCount: 1
 
+labels: 
+  app: tasky
+  owner: jicowan
+  env: production
+
 image:
   repository: 314146332292.dkr.ecr.us-west-2.amazonaws.com/tasky
   pullPolicy: Always
