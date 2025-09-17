@@ -83,11 +83,6 @@ jobs:
           tags: |
             ${{ steps.login-ecr.outputs.registry }}/tasky:${{ steps.bump_version.outputs.new_version }}
             ${{ steps.login-ecr.outputs.registry }}/tasky:latest
-          build-args: |
-            VERSION=${{ steps.bump_version.outputs.new_version }}
-            BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-            GIT_COMMIT=${{ github.sha }}
-            GITHUB_REPOSITORY=${{ github.repository }}
             
 #      - name: Build and push images
 #        uses: docker/build-push-action@v5
