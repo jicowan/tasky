@@ -5,10 +5,10 @@
 # Application configuration
 replicaCount: 1
 
-labels: 
-  app: tasky
-  owner: jicowan
+labels:
   env: production
+  owner: jicowan
+  app: tasky
 
 image:
   repository: 314146332292.dkr.ecr.us-west-2.amazonaws.com/tasky
